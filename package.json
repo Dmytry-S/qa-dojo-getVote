@@ -1,0 +1,26 @@
+{
+  "name": "qa-dojo-getvote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmytry-S/qa-dojo-getVote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Dmytry-S/qa-dojo-getVote/issues"
+  },
+  "homepage": "https://github.com/Dmytry-S/qa-dojo-getVote#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.4"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5"
+  }
+}
