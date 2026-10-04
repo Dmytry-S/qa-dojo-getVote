@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test"
 
-function goVote(age: any) {
-    if ((typeof age !== "number") || (age <= 0)) {
+function goVote(age: number) {
+    if ((!Number.isInteger(age)) || (age <= 0)) {
         throw new Error("Send valid age");
     }
     if (age >= 18) {
@@ -25,7 +25,7 @@ test("Age 19", () => {
 });
 
 test("Age is not a number", () => {
-    expect(() => goVote("17")).toThrow('Send valid age');
+    expect(() => goVote(17.5)).toThrow('Send valid age');
 });
 
 test("Age is les than zero", () => {
